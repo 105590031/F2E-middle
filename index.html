@@ -5,6 +5,37 @@
     <meta charset="utf-8" />
     <title>NTUTCSIE</title>
     <link rel="stylesheet" href="./css/index.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+         $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+             // Using jQuery's animate() method to add smooth page scroll
+             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+   
+           // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+        
+    </script>
+    <script src="./smooth-page-scroll-to-top/files/smooth_scroll.js"></script>
+    
 </head>
 
 <body>
@@ -25,7 +56,7 @@
         <div class="main_content">
             <div class="fir_content">
                 <img src="./image/img01.bmp" >
-                <a href="#立即報名">立即報名</a>
+                <a href="#apply">立即報名</a>
             </div>
             <div class="sec_content">
                 <p class="p_title">最新消息</p>
@@ -33,7 +64,7 @@
             </div>
 
             <div class="third_content">
-                <p class="p_title">報名資訊</p>
+                <a id = "apply"><p class="p_title">報名資訊</p></a>
                 <p >報名流程</p>
                 <img src="./image/img03.bmp">
             </div>
