@@ -63,10 +63,10 @@ a {
     font-family: 'Arial';
     font-size: 40px;
     font-weight: bold;
-    margin: auto;
+    margin: 50px auto;
 }
 
-.time {
+.substandard {
     text-align: center;
     font-family: 'Arial';
     font-size: 20px;
@@ -74,12 +74,12 @@ a {
     margin: auto;
 }
 
-.instructions{
+.information {
     text-align: center;
     font-family: 'Arial';
     font-size: 15px;
-    background-color: lightgray;
-    color: black;
+    background-color: rgb(89, 126, 170);
+    color: white;
     border: 2px solid black;
     margin: 30px auto;
     padding: 20px;
